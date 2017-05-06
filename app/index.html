@@ -38,8 +38,10 @@
     </nav>
 
     <div class="container">
-        <div ng-controller="MyController as ctrl">
-            <h1>{{ctrl.title}}</h1>
+        <div ng-controller="MyController as vm">
+            <h1>{{vm.title}}</h1>
+            <h2>{{vm.subTitle}}</h2>
+            <button class="btn btn-primary" ng-click="vm.openModalPopup()">Open Modal</button>
         </div>
 
         <item-version></item-version>
