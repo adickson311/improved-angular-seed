@@ -6,9 +6,10 @@
         .config(configure)
         .run(runBlock);
 
-    configure.$inject = ['$stateProvider'];
+    configure.$inject = ['$stateProvider', '$locationProvider'];
 
-    function configure($stateProvider) {
+    function configure($stateProvider, $locationProvider) {
+        $locationProvider.hashPrefix('');
     }
 
     runBlock.$inject = ['itemsservice'];
