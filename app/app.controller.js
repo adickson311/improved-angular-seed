@@ -2,12 +2,12 @@
     angular.module('app')
         .controller('MyController', MyController);
 
-        MyController.$inject = ['$scope', '$uibModal', '$log'];
+        MyController.$inject = ['$scope', '$uibModal', '$log', 'QuotesService'];
 
-        function MyController($scope, $uibModal, $log) {
+        function MyController($scope, $uibModal, $log, QuotesService) {
             var vm = this;
 
-            vm.title = 'My test';
+            vm.title = 'Inspirational Design Quote';
 
             // Instantiate the modal window
             var modalPopup = function () {

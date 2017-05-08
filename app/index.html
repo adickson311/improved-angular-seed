@@ -40,7 +40,6 @@
     <div class="container">
         <div ng-controller="MyController as vm">
             <h1>{{vm.title}}</h1>
-            <h2>{{vm.subTitle}}</h2>
             <button class="btn btn-primary" ng-click="vm.openModalPopup()">Open Modal</button>
         </div>
 
@@ -55,6 +54,7 @@
 
     <script src="services/services.module.js"></script>
     <script src="services/items.service.js"></script>
+    <script src="services/quotes.service.js"></script>
 
     <script src="components/shared-widgets.module.js"></script>
     <script src="components/item-version.directive.js"></script>
